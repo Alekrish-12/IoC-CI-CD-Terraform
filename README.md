@@ -14,13 +14,12 @@ This workshop is designed to enable engineers to get some hands-on experience us
 
 The Spring PetClinic sample application is designed to show how the Spring application framework can be used to build simple, but powerful database-oriented applications. It uses AWS RDS (MySQL) at the backend and it will demonstrate the use of Spring's core functionality. The Spring Framework is a collection of small, well-focused, loosely coupled Java frameworks that can be used independently or collectively to build industrial strength applications of many different types. 
 
-## Contributors
-
-1. Irshad A Buchh, Amazon Web Services
-2. Mike Rizzo, Amazon Web Services
 
 ## Architecture
-![Architecture](images/Architecture.png)
+
+![Screenshot (132)](https://github.com/user-attachments/assets/1798e288-bc9a-4073-80e3-b7e3b53b8b48)
+
+
 
 ## Prerequisites
 
@@ -38,7 +37,9 @@ Log into the AWS Management Console and search for Cloud9 services in the search
 
 Launch the AWS Cloud9 IDE. Close the `Welcome` tab and open a new `Terminal` tab.
 
-![Cloud9](images/Cloud9.png)
+![Screenshot (133)](https://github.com/user-attachments/assets/e8a86be5-8a39-4d9e-b003-b1be169606d8)
+
+
 
 #### Create and attach an IAM role for your Cloud9 instance
 
@@ -49,17 +50,23 @@ By default, Cloud9 manages temporary IAM credentials for you.  Unfortunately the
 1. Confirm that **AdministratorAccess** is checked, then click **Next: Tags** to assign tags.
 1. Take the defaults, and click **Next: Review** to review.
 1. Enter **workshop-admin** for the Name, and click **Create role**.
-![createrole](images/createrole.png)
+
 1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=aws-cloud9-;sort=desc:launchTime)
 1. Select the instance, then choose **Actions / Instance Settings / Modify IAM Role**. Note: If you cannot find this menu option, then look under **Actions / Security / Modify IAM Role** instead.
-![c9instancerole](images/c9instancerole.png)
+![Screenshot (134)](https://github.com/user-attachments/assets/c619b40e-a68f-4e7d-9bf2-6ecfc18049f4)
+
+
 1. Choose **workshop-admin** from the **IAM Role** drop down, and select **Apply**
-![c9attachrole](images/c9attachrole.png)
+
+![Screenshot (135)](https://github.com/user-attachments/assets/5953170c-8bb3-4425-8b57-6e78dcffc40a)
+
 1. Return to your workspace and click the gear icon (in top right corner), or click to open a new tab and choose "Open Preferences"
 1. Select **AWS SETTINGS**
 1. Turn off **AWS managed temporary credentials**
 1. Close the Preferences tab
-![c9disableiam](images/c9disableiam.png)
+![Screenshot (136)](https://github.com/user-attachments/assets/b0c54497-eef2-49b4-b9b4-105ad7370aea)
+
+
 1. In the Cloud9 terminal pane, execute the command:
     ```bash
     rm -vf ${HOME}/.aws/credentials
