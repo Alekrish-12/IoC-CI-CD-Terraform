@@ -50,6 +50,8 @@ By default, Cloud9 manages temporary IAM credentials for you.  Unfortunately the
 1. Confirm that **AdministratorAccess** is checked, then click **Next: Tags** to assign tags.
 1. Take the defaults, and click **Next: Review** to review.
 1. Enter **workshop-admin** for the Name, and click **Create role**.
+2. ![Screenshot (137)](https://github.com/user-attachments/assets/79ee98cf-5f91-4fd2-bc6c-20b2c2db8e14)
+
 
 1. Follow [this deep link to find your Cloud9 EC2 instance](https://console.aws.amazon.com/ec2/v2/home?#Instances:tag:Name=aws-cloud9-;sort=desc:launchTime)
 1. Select the instance, then choose **Actions / Instance Settings / Modify IAM Role**. Note: If you cannot find this menu option, then look under **Actions / Security / Modify IAM Role** instead.
