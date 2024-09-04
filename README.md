@@ -184,19 +184,12 @@ Once the build is complete, you can explore your environment using the AWS conso
 Note that your pipeline starts in a failed state. That is because there is no code to build in the CodeCommit repo! In the next step you will push the petclinic app into the repo to trigger the pipeline.
 
 
-## Deploy petclinic application using the pipeline
-
-You will now use git to push the petclinic application through the pipeline.
 
 
 
-### Set up a local git repo for the petclinic application
+### Set up a local git 
 
-Start by switching to the `petclinic` directory:
 
-```bash
-cd ../petclinic
-```
 
 Set up your git username and email address:
 
